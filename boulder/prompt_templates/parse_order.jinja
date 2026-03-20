@@ -1,0 +1,5 @@
+You are given a response of a chat assistant that provides information about attractions. Extract the order to vision the attractions that the assistant provided in the response as the optimal order. The attraction names are given in the following list: {{ attraction_names }}.
+Extract the names only if they are explicitly mentioned in the response. If the assistant does not provide the order, extract `null`. Generate the parsed answer in the JSON format: {"order": [...]}.
+
+Assistant's response:
+{{ answer }}

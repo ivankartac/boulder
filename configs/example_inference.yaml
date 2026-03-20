@@ -1,0 +1,39 @@
+# Example experiment config for run_inference.py
+#
+# Usage:
+#   python scripts/run_inference.py configs/example_inference.yaml
+#   python scripts/run_inference.py configs/example_inference.yaml --temperature 0.1
+#   python scripts/run_inference.py --models qwen3 --dataset data/benchmark/train_departure_time.json --output-dir results/
+
+models:
+  - mistral-small:24b-instruct-2501-q8_0
+  - command-a:111b-03-2025-q4_K_M
+
+dataset:
+  - data/benchmark/train_ticket_price.json
+  - data/benchmark/accommodation_price.json
+  - data/benchmark/train_departure_time.json
+  - data/benchmark/restaurants_opening_hours.json
+  - data/benchmark/train_departure_frequency.json
+  - data/benchmark/directional_relations.json
+  - data/benchmark/hotel_to_restaurant_distance.json
+  - data/benchmark/shortest_walking_path.json
+
+setup_ids:
+  - baseline
+  - dialogue
+  - dialogue-concise
+
+output_dir: results/example
+
+# LLM settings
+api: ollama
+host: http://localhost:11434
+think: false
+num_ctx: 8192
+num_predict: 8192
+temperature: 0.0
+seed: 42
+
+# Parser
+parser_model: qwen3:30b-a3b-instruct-2507-q8_0

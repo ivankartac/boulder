@@ -1,0 +1,2664 @@
+{
+    "train_ticket_price": {
+        "original": [
+            {
+                "role": "assistant",
+                "content": "Hi, how can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm looking for a train from {{ departure }} to {{ destination }} on {{ weekday }} leaving between {{ start_time }} and {{ end_time }}."
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_trains"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_trains"
+            },
+            {
+                "role": "assistant",
+                "content": "There's a train leaving at {{ leave_at }}. Would that work for you?"
+            },
+            {
+                "role": "user",
+                "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+            }
+        ],
+        "paraphrases": [
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to find a train that goes from {{ departure }} to {{ destination }} on {{ weekday }}, departing sometime between {{ start_time }} and {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I found one that departs at {{ leave_at }}. Does that suit you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need a train heading from {{ departure }} to {{ destination }} on {{ weekday }}, taking off somewhere between {{ start_time }} and {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I've got one that takes off at {{ leave_at }}. Does that work for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm trying to book a train traveling from {{ departure }} to {{ destination }} on {{ weekday }}, leaving sometime from {{ start_time }} to {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I see a train departing at {{ leave_at }}. Would that be good for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to find a train going from {{ departure }} to {{ destination }} on {{ weekday }}, departing anywhere between {{ start_time }} and {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I found a train that leaves at {{ leave_at }}. Does that sound good to you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm searching for a train that runs from {{ departure }} to {{ destination }} on {{ weekday }}, departing between {{ start_time }} and {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I've got a train that departs at {{ leave_at }}. Would that suit your needs?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I want to catch a train from {{ departure }} to {{ destination }} on {{ weekday }}, setting off between {{ start_time }} and {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I have a train that sets off at {{ leave_at }}. Will that work for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need a train service from {{ departure }} to {{ destination }} on {{ weekday }}, departing somewhere in the {{ start_time }} to {{ end_time }} window."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I've located a train that pulls out at {{ leave_at }}. Does that fit your schedule?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm looking for train service from {{ departure }} to {{ destination }} on {{ weekday }}, with a departure time between {{ start_time }} and {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I've found a train departing at {{ leave_at }}. Would that be suitable?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to get a train running from {{ departure }} to {{ destination }} on {{ weekday }}, leaving anytime from {{ start_time }} till {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I see one that leaves at {{ leave_at }}. Does that time work for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to locate a train from {{ departure }} to {{ destination }} on {{ weekday }}, with departure times ranging from {{ start_time }} to {{ end_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I've spotted a train heading out at {{ leave_at }}. Would that be okay for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you first calculate the total price for me? There are {{ num_people }} of us.{{ person_string }} How much would it cost?"
+                }
+            ]
+        ]
+    },
+    "accommodation_price": {
+        "original": [
+            {
+                "role": "assistant",
+                "content": "Hi, how can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm looking for {{ query_desc }}. Could you recommend something for me?"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_hotel"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_hotel"
+            },
+            {
+                "role": "assistant",
+                "content": "I recommend {{ hotel_formatted }}. Would you like to book it?"
+            },
+            {
+                "role": "user",
+                "content": "{{ user_message }}"
+            }
+        ],
+        "paraphrases": [
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ query_desc }}. Can you suggest something?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd suggest {{ hotel_formatted }}. Want to go ahead and reserve it?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm searching for {{ query_desc }}. Any recommendations?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "How about {{ hotel_formatted }}? Would you like me to book that for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I want {{ query_desc }}. Got any ideas?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Check out {{ hotel_formatted }}. Should I make a reservation?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ query_desc }}. What would you recommend?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd go with {{ hotel_formatted }}. Want me to book it for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to find {{ query_desc }}. Any suggestions?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "You should try {{ hotel_formatted }}. Interested in booking?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm on the hunt for {{ query_desc }}. What do you think?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "My pick would be {{ hotel_formatted }}. Care to reserve it?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm trying to find {{ query_desc }}. What've you got for me?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "You might like {{ hotel_formatted }}. Should I set up a booking?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ query_desc }}. Can you point me in the right direction?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I think {{ hotel_formatted }} would work great. Want to go ahead and book it?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm after {{ query_desc }}. Any chance you could recommend something?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "How about {{ hotel_formatted }}? Would that work for you to book?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ query_desc }}. Think you could suggest an option?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd recommend {{ hotel_formatted }}. Wanna book that one?"
+                },
+                {
+                    "role": "user",
+                    "content": "{{ user_message }}"
+                }
+            ]
+        ]
+    },
+    "train_departure_time": {
+        "original": [
+            {
+                "role": "assistant",
+                "content": "Hi, how can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm looking for a train from {{ departure }} to {{ destination }} today."
+            },
+            {
+                "role": "assistant",
+                "content": "Sure! What time would you like to leave?"
+            },
+            {
+                "role": "user",
+                "content": "The earliest I can leave is {{ earliest_departure_time }}."
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_trains"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_trains"
+            },
+            {
+                "role": "assistant",
+                "content": "{{ found_trains_phrase }} leaving today after {{ earliest_departure_time }}. Do you have any other requirements?"
+            },
+            {
+                "role": "user",
+                "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+            }
+        ],
+        "paraphrases": [
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to find a train going from {{ departure }} to {{ destination }} for today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "No problem! When do you want to depart?"
+                },
+                {
+                    "role": "user",
+                    "content": "I can't leave before {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} departing today following {{ earliest_departure_time }}. Is there anything else you need?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need a train that goes from {{ departure }} to {{ destination }} today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "Of course! What's your preferred departure time?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm not able to depart until {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} departing today past {{ earliest_departure_time }}. Anything else I can help with?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to book a train traveling from {{ departure }} to {{ destination }} for today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "Got it! When would you like to head out?"
+                },
+                {
+                    "role": "user",
+                    "content": "I can't get going before {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} taking off today after {{ earliest_departure_time }}. Is there anything else you'd like?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm trying to find a train that runs from {{ departure }} to {{ destination }} today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "Absolutely! What time are you planning to leave?"
+                },
+                {
+                    "role": "user",
+                    "content": "I won't be able to leave until {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} heading out today post {{ earliest_departure_time }}. Do you need anything else?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need a train from {{ departure }} to {{ destination }} for today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "No problem! When are you looking to depart?"
+                },
+                {
+                    "role": "user",
+                    "content": "I can't depart any earlier than {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} departing today from {{ earliest_departure_time }} onward. Anything else you need help with?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm searching for a train route from {{ departure }} to {{ destination }} for today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "Perfect! What time would you prefer to get going?"
+                },
+                {
+                    "role": "user",
+                    "content": "The soonest I can take off is {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} setting out today beyond {{ earliest_departure_time }}. Is there anything more you need?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need a train departing {{ departure }} and arriving at {{ destination }} today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "Absolutely! When do you want to leave?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm unable to depart before {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} departing today starting from {{ earliest_departure_time }}. Anything else you're looking for?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to catch a train from {{ departure }} to {{ destination }} today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "Sure thing! What time are you hoping to depart?"
+                },
+                {
+                    "role": "user",
+                    "content": "I can't leave any sooner than {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} pulling out today after {{ earliest_departure_time }}. Anything else you need?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm looking for a train that goes from {{ departure }} to {{ destination }} today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "Sounds good! When would you like to leave?"
+                },
+                {
+                    "role": "user",
+                    "content": "The earliest time I can leave is {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} leaving today following {{ earliest_departure_time }}. Do you need anything else?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to get a train from {{ departure }} to {{ destination }} today."
+                },
+                {
+                    "role": "assistant",
+                    "content": "No worries! What time works for you to take off?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm not available to go before {{ earliest_departure_time }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} rolling out today past {{ earliest_departure_time }}. Anything else on your mind?"
+                },
+                {
+                    "role": "user",
+                    "content": "What time is the last departure that will get me to {{ destination }} before sunset?"
+                }
+            ]
+        ]
+    },
+    "restaurants_opening_hours": {
+        "original": [
+            {
+                "role": "assistant",
+                "content": "Hi, how can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm looking for {{ food }} restaurants in the {{ area_adj }} part of town."
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_restaurant"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_restaurant"
+            },
+            {
+                "role": "assistant",
+                "content": "I found {{ num_restaurants }} {{ food }} restaurants in the {{ area }}. Do you have any other preferences to help narrow this down?"
+            },
+            {
+                "role": "user",
+                "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+            }
+        ],
+        "paraphrases": [
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to find {{ food }} places to eat in the {{ area_adj }} area."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "There are {{ num_restaurants }} {{ food }} places in the {{ area }}. Would you like to add any other criteria to narrow down the options?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I want to find {{ food }} restaurants in the {{ area_adj }} section of the city."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "There are {{ num_restaurants }} {{ food }} restaurants located in the {{ area }}. Any other preferences you'd like to mention to filter these results?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm trying to locate {{ food }} dining spots in the {{ area_adj }} region."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I've got {{ num_restaurants }} {{ food }} dining options in the {{ area }}. Want to add more details to narrow things down?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ food }} eateries around the {{ area_adj }} neighborhood."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I see {{ num_restaurants }} {{ food }} eateries available in the {{ area }}. Would you like to specify anything else to help me narrow it down?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm searching for {{ food }} places in the {{ area_adj }} part of the city."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I found {{ num_restaurants }} {{ food }} spots in the {{ area }}. Do you want to add any other preferences to make the search more specific?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'd like to look for {{ food }} restaurants around the {{ area_adj }} side of town."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Looks like there are {{ num_restaurants }} {{ food }} restaurants in the {{ area }}. Anything else you'd like me to consider to trim down the list?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I want to search for {{ food }} spots in the {{ area_adj }} area of town."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I've found {{ num_restaurants }} {{ food }} spots in the {{ area }}. Would you like to give me more details to narrow down your options?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ food }} restaurant options in the {{ area_adj }} district."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "There are {{ num_restaurants }} {{ food }} restaurants available in the {{ area }}. Is there anything else I should know to help filter these choices?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm hoping to find {{ food }} places to eat in the {{ area_adj }} zone."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I've located {{ num_restaurants }} {{ food }} places in the {{ area }}. Got any additional criteria to help me filter this list?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'd like to find {{ food }} eateries in the {{ area_adj }} sector."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I see {{ num_restaurants }} {{ food }} eateries in the {{ area }}. Any other details you want to share to refine the results?"
+                },
+                {
+                    "role": "user",
+                    "content": "Which of them are open on {{ weekday }} {{ time_specification }}?"
+                }
+            ]
+        ]
+    },
+    "train_departure_frequency": {
+        "original": [
+            {
+                "role": "assistant",
+                "content": "Hi, how can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm looking for trains from {{ departure }} to {{ destination }} on {{ weekday }}."
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_trains"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_trains"
+            },
+            {
+                "role": "assistant",
+                "content": "{{ found_trains_phrase }} leaving on {{ weekday }}. Do you have a preferred departure time?"
+            },
+            {
+                "role": "user",
+                "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+            }
+        ],
+        "paraphrases": [
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to find trains going from {{ departure }} to {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} departing on {{ weekday }}. Is there a specific time you'd like to leave?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I want to check trains running from {{ departure }} to {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} heading out on {{ weekday }}. Any particular time you're looking to travel?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'd like to search for trains traveling from {{ departure }} to {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} available on {{ weekday }}. Would you like to specify when you want to depart?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to look up trains running from {{ departure }} to {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} that depart on {{ weekday }}. Do you have a time in mind for leaving?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "Can you help me find trains from {{ departure }} to {{ destination }} on {{ weekday }}?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} departing {{ weekday }}. When would you prefer to leave?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need trains going from {{ departure }} to {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} going out on {{ weekday }}. Got a preferred time to depart?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm trying to find trains between {{ departure }} and {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} setting off on {{ weekday }}. Is there a departure time you'd prefer?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I want to see trains from {{ departure }} to {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} taking off on {{ weekday }}. Any specific time you'd like to leave?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to check trains between {{ departure }} and {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} scheduled for {{ weekday }}. Do you want to leave at a particular time?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm searching for trains that go from {{ departure }} to {{ destination }} on {{ weekday }}."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_trains"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_trains"
+                },
+                {
+                    "role": "assistant",
+                    "content": "{{ found_trains_phrase }} running on {{ weekday }}. Would you like to leave at a certain time?"
+                },
+                {
+                    "role": "user",
+                    "content": "How often on average do trains run between {{ query_interval_start }} and {{ query_interval_end }}?"
+                }
+            ]
+        ]
+    },
+    "hotel_to_restaurant_distance": {
+        "original": [
+            {
+                "role": "assistant",
+                "content": "Hi, how can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm looking for {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} part of town. Could you recommend something for me?"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_hotel"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_hotel"
+            },
+            {
+                "role": "assistant",
+                "content": "I recommend {{ hotel_name }}, a {{ stars_phrase }}{{ hotel_type }} with great reviews located at {{ hotel_address }}. Are you interested in more details?"
+            },
+            {
+                "role": "user",
+                "content": "Great, I'd like to book it for two people. A double room for {{ num_nights }} nights starting tomorrow."
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_booking"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_booking"
+            },
+            {
+                "role": "assistant",
+                "content": "Your hotel has been booked! Can I help you with anything else?"
+            },
+            {
+                "role": "user",
+                "content": "Can you also recommend {{ restaurant_food }} restaurants in the {{ restaurant_area_adj }} part of town?"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_restaurant"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_restaurant"
+            },
+            {
+                "role": "assistant",
+                "content": "How about {{ restaurant_name }}? It's {{ restaurant_pricerange }} {{ restaurant_food }} restaurant located at {{ restaurant_address }}. Would you like more details?"
+            },
+            {
+                "role": "user",
+                "content": "How far is it from the hotel to the restaurant?"
+            }
+        ],
+        "paraphrases": [
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} area. Can you suggest one?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd suggest {{ hotel_name }}, which is a {{ stars_phrase }}{{ hotel_type }} with excellent ratings at {{ hotel_address }}. Would you like to know more?"
+                },
+                {
+                    "role": "user",
+                    "content": "Perfect! I want to reserve it for 2 guests. A double room for {{ num_nights }} nights beginning tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Your reservation is confirmed! Is there anything else I can assist you with?"
+                },
+                {
+                    "role": "user",
+                    "content": "Could you also suggest {{ restaurant_food }} places to eat in the {{ restaurant_area_adj }} area?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "What about {{ restaurant_name }}? It's {{ restaurant_pricerange }} {{ restaurant_food }} spot at {{ restaurant_address }}. Want to hear more about it?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to find {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} section of the city. Any suggestions?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Check out {{ hotel_name }} - it's a {{ stars_phrase }}{{ hotel_type }} with fantastic reviews at {{ hotel_address }}. Want to learn more?"
+                },
+                {
+                    "role": "user",
+                    "content": "Sounds good! Can I book a double room there for 2 people, {{ num_nights }} nights from tomorrow?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "All set - your booking is complete! Anything else you need?"
+                },
+                {
+                    "role": "user",
+                    "content": "Yes, I'm also looking for {{ restaurant_food }} restaurants in the {{ restaurant_area_adj }} area. Got any recommendations?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Sure! {{ restaurant_name }} is {{ restaurant_pricerange }} {{ restaurant_food }} place at {{ restaurant_address }}. Interested in hearing more?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ hotel_pricerange }} place to stay in the {{ hotel_area_adj }} part of the city. Any ideas?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "You should try {{ hotel_name }} - it's a {{ stars_phrase }}{{ hotel_type }} with solid reviews, situated at {{ hotel_address }}. Would you like to hear more?"
+                },
+                {
+                    "role": "user",
+                    "content": "That works! I'd like to reserve a double room for 2 people, {{ num_nights }} nights starting from tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Done! Your reservation is confirmed. Is there anything else I can do for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "I also need {{ restaurant_food }} dining spots in the {{ restaurant_area_adj }} part of town. Any suggestions?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd recommend {{ restaurant_name }} - it's {{ restaurant_pricerange }} {{ restaurant_food }} eatery at {{ restaurant_address }}. Want to know more about it?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm searching for {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} neighborhood. Can you help me find one?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd suggest {{ hotel_name }}, a {{ stars_phrase }}{{ hotel_type }} with excellent feedback located at {{ hotel_address }}. Want to hear more?"
+                },
+                {
+                    "role": "user",
+                    "content": "Perfect! I'd like to make a booking for 2 guests. A double room for {{ num_nights }} nights, checking in tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "All done! Your hotel reservation is complete. Anything else you need help with?"
+                },
+                {
+                    "role": "user",
+                    "content": "Could you also find me {{ restaurant_food }} restaurants in the {{ restaurant_area_adj }} neighborhood?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "What about {{ restaurant_name }}? It's {{ restaurant_pricerange }} {{ restaurant_food }} dining spot at {{ restaurant_address }}. Interested in more information?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm trying to find {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} side of town. Got any recommendations?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "You might like {{ hotel_name }}, a {{ stars_phrase }}{{ hotel_type }} with strong reviews at {{ hotel_address }}. Want additional info?"
+                },
+                {
+                    "role": "user",
+                    "content": "Awesome, I want to reserve it for two guests. A double room for {{ num_nights }} nights beginning tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "You're all booked! Is there something else I can assist with?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'd also like a recommendation for {{ restaurant_food }} restaurants in the {{ restaurant_area_adj }} side of town."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Try {{ restaurant_name }}! It's {{ restaurant_pricerange }} {{ restaurant_food }} restaurant at {{ restaurant_address }}. Curious to know more?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} area of the city. Any recommendations?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "How about {{ hotel_name }}? It's a {{ stars_phrase }}{{ hotel_type }} with terrific reviews, found at {{ hotel_address }}. Want more info?"
+                },
+                {
+                    "role": "user",
+                    "content": "Sounds perfect! I need to book it for 2 people. A double room for {{ num_nights }} nights, starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Booked! Your reservation is set. Anything else you'd like help with?"
+                },
+                {
+                    "role": "user",
+                    "content": "Yes, I'd also like {{ restaurant_food }} restaurant recommendations in the {{ restaurant_area_adj }} area of the city."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Consider {{ restaurant_name }}! It's {{ restaurant_pricerange }} {{ restaurant_food }} restaurant at {{ restaurant_address }}. Interested in learning more?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} district. Can you help me out?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Sure! {{ hotel_name }} is a {{ stars_phrase }}{{ hotel_type }} with awesome reviews at {{ hotel_address }}. Want to hear more details?"
+                },
+                {
+                    "role": "user",
+                    "content": "That sounds great! I want to reserve a double room for 2 guests, {{ num_nights }} nights from tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Perfect! Your booking is confirmed. Need help with anything else?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm also after {{ restaurant_food }} places to dine in the {{ restaurant_area_adj }} district. Got any ideas?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Absolutely! {{ restaurant_name }} is {{ restaurant_pricerange }} {{ restaurant_food }} restaurant you'll find at {{ restaurant_address }}. Want additional details?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm trying to locate {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} section. Any suggestions for me?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd go with {{ hotel_name }}, a {{ stars_phrase }}{{ hotel_type }} that has terrific reviews, located at {{ hotel_address }}. Interested in hearing more?"
+                },
+                {
+                    "role": "user",
+                    "content": "Excellent! I'd like to reserve it for two guests. A double room for {{ num_nights }} nights, check-in tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Done! Your hotel booking is complete. Anything else you need?"
+                },
+                {
+                    "role": "user",
+                    "content": "Could you also point me to {{ restaurant_food }} restaurants in the {{ restaurant_area_adj }} section?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Check out {{ restaurant_name }}! It's {{ restaurant_pricerange }} {{ restaurant_food }} restaurant situated at {{ restaurant_address }}. Want to hear more about it?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm searching for {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} zone. Can you recommend something?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd recommend {{ hotel_name }}, a {{ stars_phrase }}{{ hotel_type }} with great ratings at {{ hotel_address }}. Would you like to know more?"
+                },
+                {
+                    "role": "user",
+                    "content": "Perfect! I'd like to book a double room for two people, {{ num_nights }} nights beginning tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Your booking is confirmed! Is there anything else I can help you with?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'd also like {{ restaurant_food }} restaurant suggestions in the {{ restaurant_area_adj }} zone."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "What about {{ restaurant_name }}? It's {{ restaurant_pricerange }} {{ restaurant_food }} place located at {{ restaurant_address }}. Interested in more details?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} region. Can you give me a recommendation?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "You might want to consider {{ hotel_name }}, a {{ stars_phrase }}{{ hotel_type }} with impressive reviews at {{ hotel_address }}. Would you like to hear more?"
+                },
+                {
+                    "role": "user",
+                    "content": "That sounds perfect! I want to book a double room for 2 people, {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "All set! Your hotel is booked. Is there anything else you need help with?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm also looking for {{ restaurant_food }} places to eat in the {{ restaurant_area_adj }} region. Any ideas?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_restaurant"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_restaurant"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Sure thing! {{ restaurant_name }} is {{ restaurant_pricerange }} {{ restaurant_food }} restaurant at {{ restaurant_address }}. Want to know more?"
+                },
+                {
+                    "role": "user",
+                    "content": "How far is it from the hotel to the restaurant?"
+                }
+            ]
+        ]
+    },
+    "shortest_walking_path": {
+        "original": [
+            {
+                "role": "assistant",
+                "content": "Hi, how can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm looking for {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} part of town. Could you recommend something for me?"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_hotel"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_hotel"
+            },
+            {
+                "role": "assistant",
+                "content": "What about {{ hotel_name }}? It's a {{ stars_phrase }}{{ hotel_type }} with great reviews located at {{ hotel_address }}. Would you like to book it?"
+            },
+            {
+                "role": "user",
+                "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_booking"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_booking"
+            },
+            {
+                "role": "assistant",
+                "content": "Your hotel has been booked! Is there anything else I can help you with?"
+            }
+        ],
+        "paraphrases": [
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ hotel_pricerange }} place to stay in the {{ hotel_area_adj }} area. Any suggestions?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "How about {{ hotel_name }}? It's a {{ stars_phrase }}{{ hotel_type }} with excellent feedback at {{ hotel_address }}. Want me to reserve it for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "All set - your reservation is confirmed! Anything else you need help with?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'd like to find {{ hotel_pricerange }} hotel somewhere in the {{ hotel_area_adj }} section of the city. Can you help me out?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "How about checking out {{ hotel_name }}? It's a {{ stars_phrase }}{{ hotel_type }} that has fantastic ratings and it's situated at {{ hotel_address }}. Should I go ahead and book this for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Done! Your hotel booking is complete! Can I assist you with anything else?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need to find {{ hotel_pricerange }} accommodation in the {{ hotel_area_adj }} part of the city. Got any recommendations?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "I'd suggest {{ hotel_name }}. It's a {{ stars_phrase }}{{ hotel_type }} with really good reviews, and you'll find it at {{ hotel_address }}. Want me to book it for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Perfect! I've booked your hotel! Anything else I can do for you?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm trying to find {{ hotel_pricerange }} hotel over in the {{ hotel_area_adj }} side of town. Do you have any ideas?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "You might like {{ hotel_name }}. It's a {{ stars_phrase }}{{ hotel_type }} with awesome reviews, located at {{ hotel_address }}. Shall I make a reservation?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Great! Your hotel reservation is all set! Is there something else you'd like help with?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm searching for {{ hotel_pricerange }} place to stay in the {{ hotel_area_adj }} area of the city. Can you suggest something?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Consider {{ hotel_name }}. It's a {{ stars_phrase }}{{ hotel_type }} with solid reviews at {{ hotel_address }}. Would you like me to reserve it?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Your hotel is now booked! Do you need help with anything else?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm hoping to find {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} part of the city. Any recommendations you can give me?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "What do you think of {{ hotel_name }}? It's a {{ stars_phrase }}{{ hotel_type }} with terrific reviews and it's at {{ hotel_address }}. Should I book this for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Done! Your hotel reservation is confirmed! Anything else you need assistance with?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I want to book {{ hotel_pricerange }} hotel located in the {{ hotel_area_adj }} area. Can you recommend one?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "How does {{ hotel_name }} sound? It's a {{ stars_phrase }}{{ hotel_type }} with excellent ratings at {{ hotel_address }}. Shall I reserve it for you?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "All done! Your hotel is booked! Can I help with anything else?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I need {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} part of the city. Any suggestions?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Take a look at {{ hotel_name }}. It's a {{ stars_phrase }}{{ hotel_type }} with strong reviews, found at {{ hotel_address }}. Want me to make a booking?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Perfect! Your hotel reservation is complete! Anything else I can assist with?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm after {{ hotel_pricerange }} hotel in the {{ hotel_area_adj }} area. Can you point me toward something?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Have you considered {{ hotel_name }}? It's a {{ stars_phrase }}{{ hotel_type }} with impressive reviews at {{ hotel_address }}. Should I go ahead and reserve it?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Your hotel booking is confirmed! Is there anything else you need help with?"
+                }
+            ],
+            [
+                {
+                    "role": "assistant",
+                    "content": "Hi, how can I help you today?"
+                },
+                {
+                    "role": "user",
+                    "content": "I'm looking for {{ hotel_pricerange }} hotel somewhere in the {{ hotel_area_adj }} section of town. Any ideas for me?"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_hotel"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_hotel"
+                },
+                {
+                    "role": "assistant",
+                    "content": "How about {{ hotel_name }}? It's a {{ stars_phrase }}{{ hotel_type }} with really positive reviews and it's located at {{ hotel_address }}. Would you like me to reserve it?"
+                },
+                {
+                    "role": "user",
+                    "content": "Great, I'd like to book a double room for {{ num_nights }} nights starting tomorrow."
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_call_booking"
+                },
+                {
+                    "role": "placeholder",
+                    "content": "tool_response_booking"
+                },
+                {
+                    "role": "assistant",
+                    "content": "Your hotel reservation is complete! Can I help you with anything else?"
+                }
+            ]
+        ]
+    },
+    "directional_relations": {
+        "original": [
+            {
+                "role": "assistant",
+                "content": "Hi, how can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm looking for {{ restaurant_food }} restaurants in the {{ restaurant_area_adj }} part of town."
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_restaurant"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_restaurant"
+            },
+            {
+                "role": "assistant",
+                "content": "I found {{ num_restaurants }} {{ restaurant_food }} restaurants in the {{ restaurant_area_adj }} part of town. Would you like to narrow it down by price range or any other preference?"
+            },
+            {
+                "role": "user",
+                "content": "Can you recommend something for me?"
+            },
+            {
+                "role": "assistant",
+                "content": "{{ restaurant_name }} is a great {{ restaurant_pricerange }} {{ restaurant_food }} restaurant located at {{ restaurant_address }}. Would you like to book a table for today?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, I'd like to book a table for two people tomorrow at {{ booking_time }}."
+            },
+            {
+                "role": "assistant",
+                "content": "I've booked a table for you at {{ restaurant_name }} for tomorrow at {{ booking_time }} for two people. Is there anything else I can help you with?"
+            },
+            {
+                "role": "user",
+                "content": "Thanks. I'd like information about {{ attraction_name }}."
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_call_attraction"
+            },
+            {
+                "role": "placeholder",
+                "content": "tool_response_attraction"
+            },
+            {
+                "role": "assistant",
+                "content": "{{ attraction_name }} is a {{ attraction_type }} located at {{ attraction_address }} in the {{ attraction_area_adj }} part of town.{{ attraction_fee_info }} Do you want more information about it?"
+            },
+            {
+                "role": "user",
+                "content": "Is {{ attraction_name }} {{ asked_direction }} of {{ restaurant_name }}?"
+            }
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+You are given a response of a chat assistant that provides information about train departures. Extract the average interval (frequency) between train departures that the assistant provided in the response. This could be expressed in various ways such as 'every 2 hours', 'every 60 minutes', 'trains depart every hour', etc. Only extract the value if it is explicitly mentioned as a departure frequency or interval in the response. If the answer is a range, extract the average of the range. Otherwise extract `null`. Parse the interval in minutes as a float number. Generate only the parsed answer in the JSON format: {"average_interval_minutes": <float>}.
+
+Assistant's response:
+{{ answer }}

@@ -1,0 +1,4 @@
+You are given a response of a chat assistant that provides information about train departures. Extract the departure time that the assistant provided in the response as the latest departure time before sunset. Only extract the value if it is explicitly mentioned as a departure time in the response. Otherwise extract `null`. Parse the time in ISO format as HH:MM. Generate only the parsed answer without any additional text in the JSON format: {"latest_departure_time": "HH:MM"}.
+
+Assistant's response:
+{{ answer }}

@@ -1,0 +1,4 @@
+You are given a response of a chat assistant that provides information about directions. Extract whether the assistant answered in the response that {{ attraction_name }} is to the {{ asked_direction }} of {{ restaurant_name }}. If the assistant answers with just a yes or no without explanation, extract the answer. If the assistant does not provide the answer or says that they are in the same area, extract `unknown`. Generate only the parsed answer in the JSON format: {"is_{{ asked_direction }}": <yes/no/unknown>}.
+
+Assistant's response:
+{{ answer }}

@@ -1,0 +1,1266 @@
+[
+    {
+        "address": "pool way, whitehill road, off newmarket road",
+        "area": "east",
+        "entrance fee": "?",
+        "id": "1",
+        "location": [
+            24930,
+            9905
+        ],
+        "name": "abbey pool and astroturf pitch",
+        "openhours": "?",
+        "phone": "01223902088",
+        "postcode": "cb58nt",
+        "pricerange": "?",
+        "type": "swimmingpool"
+    },
+    {
+        "address": "park street",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "2",
+        "location": [
+            22556,
+            9895
+        ],
+        "name": "adc theatre",
+        "openhours": "?",
+        "phone": "01223300085",
+        "postcode": "cb58as",
+        "pricerange": "?",
+        "type": "theatre"
+    },
+    {
+        "address": "jesus lane",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "3",
+        "location": [
+            22935,
+            9796
+        ],
+        "name": "all saints church",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m., at other times the key can be borrowed from a nearby key holder.",
+        "phone": "01223452587",
+        "postcode": "cb58bs",
+        "pricerange": "free",
+        "type": "architecture"
+    },
+    {
+        "address": "heidelberg gardens, lion yard",
+        "area": "centre",
+        "entrance fee": "5 pounds",
+        "id": "4",
+        "location": [
+            22535,
+            9460
+        ],
+        "name": "ballare",
+        "openhours": "it opens from 10:30 p.m. to 03:30 a.m on thursday, from 11:00 p.m. to 04:00 a.m. on friday, from 10:00 p.m. to 03:30 a.m. on saturday, and from 10:00 p.m. to 02:30 a.m. on monday",
+        "phone": "01223364222",
+        "postcode": "cb23na",
+        "pricerange": "moderate",
+        "type": "nightclub"
+    },
+    {
+        "address": "98 king street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "5",
+        "location": [
+            23011,
+            9752
+        ],
+        "name": "broughton house gallery",
+        "openhours": "?",
+        "phone": "01223314960",
+        "postcode": "cb11ln",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "14 king's parade",
+        "area": "south",
+        "entrance fee": "free",
+        "id": "6",
+        "location": [
+            21954,
+            5888
+        ],
+        "name": "byard art",
+        "openhours": "it opens from 09:30 a.m. to 5:30 p.m. from monday to saturday, and from 11:00 a.m. to 4:00 p.m. on sunday",
+        "phone": "01223464646",
+        "postcode": "cb21sj",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "cafe jello gallery, 13 magdalene street",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "7",
+        "location": [
+            20845,
+            11366
+        ],
+        "name": "cafe jello gallery",
+        "openhours": "it opens from 10:30 a.m. to 5:30 p.m. thursday to saturday",
+        "phone": "01223312112",
+        "postcode": "cb30af",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "the plough, green end, fen ditton,",
+        "area": "east",
+        "entrance fee": "?",
+        "id": "8",
+        "location": [
+            25019,
+            10314
+        ],
+        "name": "camboats",
+        "openhours": "?",
+        "phone": "01223902112",
+        "postcode": "cb58sx",
+        "pricerange": "?",
+        "type": "boat"
+    },
+    {
+        "address": "2-3 castle street",
+        "area": "west",
+        "entrance fee": "3.50 pounds",
+        "id": "9",
+        "location": [
+            22197,
+            10124
+        ],
+        "name": "cambridge and county folk museum",
+        "openhours": "it opens from monday to saturday, 10 a.m. to 5 p.m. while on sunday it opens from 2 p.m. to 5 p.m.",
+        "phone": "01223355159",
+        "postcode": "cb30aq",
+        "pricerange": "moderate",
+        "type": "museum"
+    },
+    {
+        "address": "6 saint edward's passage",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "10",
+        "location": [
+            22496,
+            9315
+        ],
+        "name": "cambridge arts theatre",
+        "openhours": "?",
+        "phone": "01223503333",
+        "postcode": "cb23pj",
+        "pricerange": "?",
+        "type": "theatre"
+    },
+    {
+        "address": "5 greens road",
+        "area": "east",
+        "entrance fee": "free",
+        "id": "11",
+        "location": [
+            24394,
+            9181
+        ],
+        "name": "cambridge artworks",
+        "openhours": "?",
+        "phone": "01223902168",
+        "postcode": "cb13ef",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "49 newnham road",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "12",
+        "location": [
+            22100,
+            8790
+        ],
+        "name": "cambridge book and print gallery",
+        "openhours": "it opens from 10:00 a.m. to 5:00 p.m. from tuesday to saturday",
+        "phone": "01223694264",
+        "postcode": "cb39ey",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "6 trinity street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "13",
+        "location": [
+            22434,
+            9605
+        ],
+        "name": "cambridge contemporary art",
+        "openhours": "it opens from 11:00 a.m. to 4:00 p.m. on sunday, and from 09:00 a.m. to 5:30 p.m. from monday to saturday",
+        "phone": "01223324222",
+        "postcode": "cb21su",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "the old pumping station, cheddars lane",
+        "area": "east",
+        "entrance fee": "5 pounds",
+        "id": "14",
+        "location": [
+            25019,
+            10314
+        ],
+        "name": "cambridge museum of technology",
+        "openhours": "it opens on sunday from 2:00 p.m. to 5:00 p.m.",
+        "phone": "01223368650",
+        "postcode": "cb58ld",
+        "pricerange": "expensive",
+        "type": "museum"
+    },
+    {
+        "address": "bateman street",
+        "area": "centre",
+        "entrance fee": "4 pounds",
+        "id": "15",
+        "location": [
+            22961,
+            8402
+        ],
+        "name": "cambridge university botanic gardens",
+        "openhours": "it opens from 10:00 a.m. to 6:00 p.m. from april to september, from 10:00 a.m. to 5:00 p.m. in february march and october, and from 10:00 a.m. to 4:00 p.m. from november to january",
+        "phone": "01223336265",
+        "postcode": "cb21jf",
+        "pricerange": "moderate",
+        "type": "park"
+    },
+    {
+        "address": "unit su43, grande arcade, saint andrews street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "16",
+        "location": [
+            22647,
+            9461
+        ],
+        "name": "castle galleries",
+        "openhours": "it opens from 09:00 a.m. to 6:00 p.m. every day except wednesday when it opens from 09:00 a.m. to 8:00 p.m., and sunday when it opens from 11:00 a.m. to 5:00 p.m.",
+        "phone": "01223307402",
+        "postcode": "cb23bj",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "cherry hinton road",
+        "area": "east",
+        "entrance fee": "?",
+        "id": "17",
+        "location": [
+            25109,
+            7380
+        ],
+        "name": "cherry hinton hall and grounds",
+        "openhours": "?",
+        "phone": "01223446104",
+        "postcode": "cb18dw",
+        "pricerange": "?",
+        "type": "entertainment"
+    },
+    {
+        "address": "cherry hinton hall, cherry hinton road",
+        "area": "east",
+        "entrance fee": "free",
+        "id": "18",
+        "location": [
+            25109,
+            7380
+        ],
+        "name": "cherry hinton water play",
+        "openhours": "it opens from may to september",
+        "phone": "01223446100",
+        "postcode": "cb18dw",
+        "pricerange": "free",
+        "type": "park"
+    },
+    {
+        "address": "saint andrew's street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "19",
+        "location": [
+            22670,
+            9634
+        ],
+        "name": "christ's college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223334900",
+        "postcode": "cb23bu",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "storey's way",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "20",
+        "location": [
+            21402,
+            10360
+        ],
+        "name": "churchill college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223336233",
+        "postcode": "cb30ds",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "cambridge leisure park, clifton way",
+        "area": "south",
+        "entrance fee": "?",
+        "id": "21",
+        "location": [
+            23710,
+            7833
+        ],
+        "name": "cineworld cinema",
+        "openhours": "?",
+        "phone": "00872208000",
+        "postcode": "cb17dy",
+        "pricerange": "?",
+        "type": "cinema"
+    },
+    {
+        "address": "trinity lane",
+        "area": "west",
+        "entrance fee": "2.50 pounds",
+        "id": "22",
+        "location": [
+            22240,
+            9468
+        ],
+        "name": "clare college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223333200",
+        "postcode": "cb21tl",
+        "pricerange": "moderate",
+        "type": "college"
+    },
+    {
+        "address": "herschel road",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "23",
+        "location": [
+            21494,
+            9379
+        ],
+        "name": "clare hall",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223332360",
+        "postcode": "cb39al",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "1 station road",
+        "area": "centre",
+        "entrance fee": "5 pounds",
+        "id": "24",
+        "location": [
+            23346,
+            8394
+        ],
+        "name": "club salsa",
+        "openhours": "it opens at the university social club from 9:30 p.m. to 11:30 p.m. on wednesday, and from 10:00 p.m. to 01:00 a.m. on friday",
+        "phone": "07782218745",
+        "postcode": "cb12jb",
+        "pricerange": "moderate",
+        "type": "nightclub"
+    },
+    {
+        "address": "king's parade",
+        "area": "centre",
+        "entrance fee": "2 pounds",
+        "id": "25",
+        "location": [
+            22405,
+            9245
+        ],
+        "name": "corpus christi",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223338000",
+        "postcode": "cb21rh",
+        "pricerange": "cheap",
+        "type": "college"
+    },
+    {
+        "address": "regent street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "26",
+        "location": [
+            22906,
+            9082
+        ],
+        "name": "downing college",
+        "openhours": "it opens daily from 9 a.m. to 5 p.m. except during easter term",
+        "phone": "01223334860",
+        "postcode": "cb21dq",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "saint andrew's street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "27",
+        "location": [
+            22810,
+            9326
+        ],
+        "name": "emmanuel college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223334200",
+        "postcode": "cb23ap",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "8 mercers row, mercers row industrial estate",
+        "area": "east",
+        "entrance fee": "?",
+        "id": "28",
+        "location": [
+            24453,
+            10484
+        ],
+        "name": "funky fun house",
+        "openhours": "?",
+        "phone": "01223304705",
+        "postcode": "cb58hy",
+        "pricerange": "?",
+        "type": "entertainment"
+    },
+    {
+        "address": "fulbourn",
+        "area": "east",
+        "entrance fee": "free",
+        "id": "29",
+        "location": [
+            29494,
+            7098
+        ],
+        "name": "gallery at twelve a high street",
+        "openhours": "?",
+        "phone": "01223295264",
+        "postcode": "cb15dh",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "trinity street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "30",
+        "location": [
+            22414,
+            9580
+        ],
+        "name": "gonville and caius college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223332400",
+        "postcode": "cb21ta",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "market square",
+        "area": "centre",
+        "entrance fee": "2 pounds",
+        "id": "31",
+        "location": [
+            22431,
+            9478
+        ],
+        "name": "great saint mary's church",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m.",
+        "phone": "01223350914",
+        "postcode": "cb23pq",
+        "pricerange": "cheap",
+        "type": "architecture"
+    },
+    {
+        "address": "market street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "32",
+        "location": [
+            22554,
+            9570
+        ],
+        "name": "holy trinity church",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m.",
+        "phone": "01223355397",
+        "postcode": "cb23nz",
+        "pricerange": "free",
+        "type": "architecture"
+    },
+    {
+        "address": "wollaston road",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "33",
+        "location": [
+            23455,
+            9006
+        ],
+        "name": "hughes hall",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223334898",
+        "postcode": "cb12ew",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "jesus lane",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "34",
+        "location": [
+            22916,
+            9968
+        ],
+        "name": "jesus college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223339485",
+        "postcode": "cb58bl",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "between victoria road and the river",
+        "area": "north",
+        "entrance fee": "?",
+        "id": "35",
+        "location": [
+            22221,
+            11186
+        ],
+        "name": "jesus green outdoor pool",
+        "openhours": "?",
+        "phone": "01223302579",
+        "postcode": "cb43px",
+        "pricerange": "?",
+        "type": "swimmingpool"
+    },
+    {
+        "address": "1 wheeler street",
+        "area": "centre",
+        "entrance fee": "5 pounds",
+        "id": "36",
+        "location": [
+            22497,
+            9395
+        ],
+        "name": "kambar",
+        "openhours": "it opens from 10:00 p.m. to 4:00 a.m. depending on whether there is an event on or not",
+        "phone": "01223842725",
+        "postcode": "cb23qb",
+        "pricerange": "moderate",
+        "type": "nightclub"
+    },
+    {
+        "address": "castle street",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "37",
+        "location": [
+            22080,
+            10306
+        ],
+        "name": "kettle's yard",
+        "openhours": "it opens from 11:30 a.m. to 5:00 p.m. tuesday to sunday",
+        "phone": "01223748100",
+        "postcode": "cb30aq",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "king's parade",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "38",
+        "location": [
+            22366,
+            9405
+        ],
+        "name": "king's college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223331100",
+        "postcode": "cb21st",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "jedburgh court, kings hedges",
+        "area": "north",
+        "entrance fee": "?",
+        "id": "39",
+        "location": [
+            22717,
+            12449
+        ],
+        "name": "kings hedges learner pool",
+        "openhours": "?",
+        "phone": "01223353248",
+        "postcode": "cb42xh",
+        "pricerange": "?",
+        "type": "swimmingpool"
+    },
+    {
+        "address": "little saint mary's lane",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "40",
+        "location": [
+            22544,
+            8986
+        ],
+        "name": "little saint mary's church",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m.",
+        "phone": "01223366202",
+        "postcode": "cb21qy",
+        "pricerange": "free",
+        "type": "architecture"
+    },
+    {
+        "address": "23 high street, fen ditton",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "41",
+        "location": [
+            20854,
+            11377
+        ],
+        "name": "lynne strover gallery",
+        "openhours": "it opens from 10:00 a.m. to 5:00 p.m. thursday to saturday",
+        "phone": "01223295264",
+        "postcode": "cb30aq",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "magdalene street",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "42",
+        "location": [
+            22266,
+            10084
+        ],
+        "name": "magdalene college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223332138",
+        "postcode": "cb30ag",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "milton country park, milton",
+        "area": "north",
+        "entrance fee": "free",
+        "id": "43",
+        "location": [
+            25048,
+            14186
+        ],
+        "name": "milton country park",
+        "openhours": "always",
+        "phone": "01223420060",
+        "postcode": "cb46az",
+        "pricerange": "free",
+        "type": "park"
+    },
+    {
+        "address": "anglia ruskin enterprise, east road",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "44",
+        "location": [
+            23306,
+            9563
+        ],
+        "name": "mumford theatre",
+        "openhours": "?",
+        "phone": "08451962320",
+        "postcode": "cb11pt",
+        "pricerange": "?",
+        "type": "theatre"
+    },
+    {
+        "address": "university of cambridge, downing street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "45",
+        "location": [
+            22323,
+            9513
+        ],
+        "name": "museum of archaelogy and anthropology",
+        "openhours": "it opens from 10:30 a.m. to 4:30 p.m. tuesday to saturday",
+        "phone": "01223333516",
+        "postcode": "cb23dz",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "sidgwick avenue",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "46",
+        "location": [
+            21977,
+            10025
+        ],
+        "name": "museum of classical archaeology",
+        "openhours": "it opens from 10:00 a.m. to 5:00 p.m. monday to friday",
+        "phone": "01223335153",
+        "postcode": "cb39da",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "unit g6, cambridge leisure park, clifton road",
+        "area": "south",
+        "entrance fee": "?",
+        "id": "47",
+        "location": [
+            23748,
+            7781
+        ],
+        "name": "nusha",
+        "openhours": "it opens from 5:00 p.m. to 01:30 a.m. on tuesday, friday and saturday, and from 5:00 p.m. to midnight on monday, wednesday, thursday and sunday.",
+        "phone": "01223902158",
+        "postcode": "cb17dy",
+        "pricerange": "?",
+        "type": "entertainment"
+    },
+    {
+        "address": "trinity lane",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "48",
+        "location": [
+            22323,
+            9514
+        ],
+        "name": "old schools",
+        "openhours": "it opens normally daily from 08:00 a.m. to 5:45 p.m.",
+        "phone": "01223332320",
+        "postcode": "cb21tt",
+        "pricerange": "free",
+        "type": "architecture"
+    },
+    {
+        "address": "gonville place",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "49",
+        "location": [
+            23229,
+            9071
+        ],
+        "name": "parkside pools",
+        "openhours": "?",
+        "phone": "01223446100",
+        "postcode": "cb11ly",
+        "pricerange": "?",
+        "type": "swimmingpool"
+    },
+    {
+        "address": "trumpington street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "50",
+        "location": [
+            22597,
+            9219
+        ],
+        "name": "pembroke college",
+        "openhours": "any time except may and june",
+        "phone": "01223338100",
+        "postcode": "cb21rf",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "girton college, huntingdon road",
+        "area": "west",
+        "entrance fee": "free",
+        "id": "51",
+        "location": [
+            20082,
+            12079
+        ],
+        "name": "people's portraits exhibition at girton college",
+        "openhours": "it opens from 2:00 p.m. to 4:00 p.m. daily from february to july",
+        "phone": "01223338901",
+        "postcode": "cb3ojg",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "10 king s parade",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "52",
+        "location": [
+            22496,
+            9315
+        ],
+        "name": "primavera",
+        "openhours": "it opens from 11:00 a.m. to 4:30 p.m. on sunday, from 10:00 a.m. to 5:00 p.m. from monday to friday, and from 10:00 a.m. to 5:30 p.m. on saturday",
+        "phone": "01223357708",
+        "postcode": "cb21sj",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "silver street",
+        "area": "west",
+        "entrance fee": "2.50 pounds",
+        "id": "53",
+        "location": [
+            22159,
+            9129
+        ],
+        "name": "queens' college",
+        "openhours": "monday to sunday 10 a.m. to 4:30 p.m.",
+        "phone": "01223335511",
+        "postcode": "cb39et",
+        "pricerange": "moderate",
+        "type": "college"
+    },
+    {
+        "address": "39 fitzroy street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "54",
+        "location": [
+            23326,
+            9687
+        ],
+        "name": "regency gallery",
+        "openhours": "?",
+        "phone": "01223365454",
+        "postcode": "cb11er",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "cambridge passenger cruisers, jubilee house",
+        "area": "north",
+        "entrance fee": "?",
+        "id": "55",
+        "location": [
+            21983,
+            12206
+        ],
+        "name": "riverboat georgina",
+        "openhours": "?",
+        "phone": "01223902091",
+        "postcode": "cb43ax",
+        "pricerange": "?",
+        "type": "boat"
+    },
+    {
+        "address": "anglia ruskin university, east road",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "56",
+        "location": [
+            23306,
+            9563
+        ],
+        "name": "ruskin gallery",
+        "openhours": "?",
+        "phone": "01245493131",
+        "postcode": "cb11pt",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "the belfast yard, coldham's road",
+        "area": "east",
+        "entrance fee": "free",
+        "id": "57",
+        "location": [
+            24508,
+            9882
+        ],
+        "name": "saint barnabas press gallery",
+        "openhours": "?",
+        "phone": "01223902116",
+        "postcode": "cb13ew",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "king's parade",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "58",
+        "location": [
+            22306,
+            9244
+        ],
+        "name": "saint catharine's college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223338300",
+        "postcode": "cb21rl",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "saint john's street",
+        "area": "centre",
+        "entrance fee": "2.50 pounds",
+        "id": "59",
+        "location": [
+            22376,
+            9906
+        ],
+        "name": "saint john's college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223338600",
+        "postcode": "cb21tp",
+        "pricerange": "moderate",
+        "type": "college"
+    },
+    {
+        "address": "lensfield road",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "60",
+        "location": [
+            22769,
+            8714
+        ],
+        "name": "scott polar museum",
+        "openhours": "it opens from 10:00 a.m. to 4:00 p.m. from tuesday to saturday",
+        "phone": "01223336540",
+        "postcode": "cb21er",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "granta place, mill lane",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "61",
+        "location": [
+            22300,
+            9038
+        ],
+        "name": "scudamores punting co",
+        "openhours": "?",
+        "phone": "01223359750",
+        "postcode": "cb21rs",
+        "pricerange": "?",
+        "type": "boat"
+    },
+    {
+        "address": "fen causeway, newnham road,",
+        "area": "south",
+        "entrance fee": "free",
+        "id": "62",
+        "location": [
+            24296,
+            6347
+        ],
+        "name": "sheep's green and lammas land park fen causeway",
+        "openhours": "it is open from may to sept",
+        "phone": "01223302580",
+        "postcode": "cb22ad",
+        "pricerange": "free",
+        "type": "park"
+    },
+    {
+        "address": "sidney street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "63",
+        "location": [
+            22644,
+            9758
+        ],
+        "name": "sidney sussex college",
+        "openhours": "it opens daily from 9 a.m. to 5 p.m. except during easter term",
+        "phone": "01223338800",
+        "postcode": "cb23hu",
+        "pricerange": "free",
+        "type": "college"
+    },
+    {
+        "address": "1-6 corn exchange street",
+        "area": "centre",
+        "entrance fee": "4 pounds",
+        "id": "64",
+        "location": [
+            22582,
+            9360
+        ],
+        "name": "soul tree nightclub",
+        "openhours": "it opens from 9:30 p.m. to 02:00 a.m. from sunday to tuesday, from 9:00 p.m. to 02:00 a.m. on wednesday, and from 9:00 p.m. to 02:30 a.m. from thursday to saturday",
+        "phone": "01223477900",
+        "postcode": "cb23qf",
+        "pricerange": "cheap",
+        "type": "nightclub"
+    },
+    {
+        "address": "cambridge leisure park, clifton way",
+        "area": "south",
+        "entrance fee": "?",
+        "id": "65",
+        "location": [
+            24231,
+            7340
+        ],
+        "name": "tenpin",
+        "openhours": "?",
+        "phone": "08715501010",
+        "postcode": "cb17dy",
+        "pricerange": "?",
+        "type": "entertainment"
+    },
+    {
+        "address": "wheeler street",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "66",
+        "location": [
+            22499,
+            9408
+        ],
+        "name": "the cambridge corn exchange",
+        "openhours": "?",
+        "phone": "01223357851",
+        "postcode": "cb23qe",
+        "pricerange": "?",
+        "type": "theatre"
+    },
+    {
+        "address": "251a chesterton road",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "67",
+        "location": [
+            22461,
+            10255
+        ],
+        "name": "the cambridge punter",
+        "openhours": "?",
+        "phone": "07807718591",
+        "postcode": "cb41as",
+        "pricerange": "?",
+        "type": "boat"
+    },
+    {
+        "address": "colville road, cherry hinton",
+        "area": "east",
+        "entrance fee": "?",
+        "id": "68",
+        "location": [
+            26561,
+            7455
+        ],
+        "name": "the cherry hinton village centre",
+        "openhours": "it opens from 09:00 a.m. to 8:00 p.m. on sunday, and from 09:00 a.m. to 10:00 p.m. from monday to saturday",
+        "phone": "01223576412",
+        "postcode": "cb19ej",
+        "pricerange": "?",
+        "type": "mutliple sports"
+    },
+    {
+        "address": "8 market passage",
+        "area": "centre",
+        "entrance fee": "5 pounds",
+        "id": "69",
+        "location": [
+            22571,
+            9611
+        ],
+        "name": "the fez club",
+        "openhours": "it opens on monday from 9 p.m. to 2 a.m.. it is closed on tuesday. from wednesday to saturday it opens from 9 p.m. to 2 a.m. and it is closed on sunday",
+        "phone": "01223519224",
+        "postcode": "cb23hx",
+        "pricerange": "moderate",
+        "type": "nightclub"
+    },
+    {
+        "address": "trumpington street",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "70",
+        "location": [
+            22674,
+            8768
+        ],
+        "name": "the fitzwilliam museum",
+        "openhours": "from tuesday to saturday it opens from 10 a.m. to 5 p.m. while on sunday, monday and bank holidays it opens from 12 to 5 p.m.",
+        "phone": "01223332900",
+        "postcode": "cb21rb",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "clifton way",
+        "area": "south",
+        "entrance fee": "?",
+        "id": "71",
+        "location": [
+            23626,
+            7855
+        ],
+        "name": "the junction",
+        "openhours": "?",
+        "phone": "01223511511",
+        "postcode": "cb17gx",
+        "pricerange": "?",
+        "type": "theatre"
+    },
+    {
+        "address": "2 norfolk street",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "72",
+        "location": [
+            23678,
+            9456
+        ],
+        "name": "the man on the moon",
+        "openhours": "?",
+        "phone": "01223474144",
+        "postcode": "cb12lf",
+        "pricerange": "?",
+        "type": "concerthall"
+    },
+    {
+        "address": "22 sidney street",
+        "area": "south",
+        "entrance fee": "?",
+        "id": "73",
+        "location": [
+            21954,
+            5888
+        ],
+        "name": "the place",
+        "openhours": "it opens from 10:30 p.m. to 03:30 a.m. on tuesday, from 10:00 p.m. to 02:30 a.m. on thursday, from 10:00 p.m. to 04:00 a.m. on friday and saturday, and from 10:00 p.m. to 02:00 a.m. on sunday",
+        "phone": "01223324600",
+        "postcode": "cb23hg",
+        "pricerange": "moderate",
+        "type": "nightclub"
+    },
+    {
+        "address": "trinity street",
+        "area": "centre",
+        "entrance fee": "1 pound",
+        "id": "74",
+        "location": [
+            22390,
+            9715
+        ],
+        "name": "trinity college",
+        "openhours": "it opens normally daily from 9 a.m. to 5 p.m. except easter term",
+        "phone": "01223338400",
+        "postcode": "cb21tq",
+        "pricerange": "cheap",
+        "type": "college"
+    },
+    {
+        "address": "the grafton centre, east road",
+        "area": "centre",
+        "entrance fee": "?",
+        "id": "75",
+        "location": [
+            23306,
+            9563
+        ],
+        "name": "vue cinema",
+        "openhours": "?",
+        "phone": "08712240240",
+        "postcode": "cb11ps",
+        "pricerange": "?",
+        "type": "cinema"
+    },
+    {
+        "address": "wandlebury ring, gog magog hills, babraham",
+        "area": "south",
+        "entrance fee": "free",
+        "id": "76",
+        "location": [
+            26711,
+            0
+        ],
+        "name": "wandlebury country park",
+        "openhours": "always",
+        "phone": "01223243830",
+        "postcode": "cb223ae",
+        "pricerange": "free",
+        "type": "park"
+    },
+    {
+        "address": "unit 8, viking way, bar hill",
+        "area": "west",
+        "entrance fee": "?",
+        "id": "77",
+        "location": [
+            15496,
+            14923
+        ],
+        "name": "whale of a time",
+        "openhours": "it opens from 09:30 a.m. to 6:00 p.m. daily",
+        "phone": "01954781018",
+        "postcode": "cb238el",
+        "pricerange": "?",
+        "type": "entertainment"
+    },
+    {
+        "address": "free school lane",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "78",
+        "location": [
+            22479,
+            9275
+        ],
+        "name": "whipple museum of the history of science",
+        "openhours": "it opens from 12:30 p.m. to 4:30 p.m. from monday to friday",
+        "phone": "01223330906",
+        "postcode": "cb23rh",
+        "pricerange": "free",
+        "type": "museum"
+    },
+    {
+        "address": "gwydir street, no. 5 dale's brewery",
+        "area": "centre",
+        "entrance fee": "free",
+        "id": "79",
+        "location": [
+            23813,
+            8952
+        ],
+        "name": "williams art and antiques",
+        "openhours": "it opens from 11:00 a.m. to 6:00 p.m. from tuesday to friday, from 11:00 a.m. to 5:00 p.m. on saturday and sunday, and it is closed on monday",
+        "phone": "01223311687",
+        "postcode": "cb12lj",
+        "pricerange": "free",
+        "type": "museum"
+    }
+]

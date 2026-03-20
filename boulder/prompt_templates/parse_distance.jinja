@@ -1,0 +1,4 @@
+You are given a response of a chat assistant that provides information about hotels and restaurants. Extract the distance between the hotel and the restaurant that the assistant provided in the response. Only extract the value if it is explicitly mentioned as a distance in the response. Otherwise extract `null`. If a range is given, extract the average of the range. Parse the distance in meters as an integer number. Generate only the parsed answer without any additional text in the JSON format: {"distance": <int>}.
+
+Assistant's response:
+{{ answer }}

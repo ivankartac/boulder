@@ -1,0 +1,28 @@
+# Example evaluation config for run_evaluation.py
+#
+# Usage:
+#   python scripts/run_evaluation.py configs/example_eval.yaml
+#   python scripts/run_evaluation.py configs/example_eval.yaml --k-minutes 10
+#   python scripts/run_evaluation.py --datasets results/ --ppi
+
+datasets:
+  - results/example
+
+setup_id:
+  - baseline
+  - dialogue
+  - dialogue-concise
+
+# MAE normalization: 1 / (1 + MAE/k) — enabled by default
+normalize_mae: true
+k_minutes: 5.0
+k_meters: 500.0
+
+# Aggregate scores across tasks — enabled by default
+aggregate: true
+
+# PPI bias correction
+ppi: true
+parser_annotations: data/parser_validation.csv
+
+output_csv: data/evaluations/results.csv

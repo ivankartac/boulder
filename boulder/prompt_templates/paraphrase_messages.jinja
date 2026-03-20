@@ -1,0 +1,9 @@
+Given the following dialogue, generate a paraphrased version with the same meaning and structure. Paraphrase each user and assistant message in the dialogue using different words and phrasing. Keep the placeholders in curly braces in the same messages as in the original dialogue. All paraphrases should be friendly and conversational and not too formal. You must preserve all such placeholders from the original dialogue in their corresponding messages! Generate the dialogue as a JSON array of message objects.
+
+{% if previous_paraphrases %}Previously generated paraphrased dialogues (generate something DIFFERENT from these, but keep the same meaning and structure):
+{% for para in previous_paraphrases %}
+--- Paraphrase {{ loop.index }} ---
+{{ para }}
+
+{% endfor %}{% endif %}Original dialogue:
+{{ dialogue }}
