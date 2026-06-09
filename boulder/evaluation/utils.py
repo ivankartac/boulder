@@ -67,15 +67,16 @@ def load_datasets(paths: list[str] | None) -> dict:
     all_datasets = {}
     for path in (paths or []):
         dataset_name = os.path.basename(path).replace('.jsonl', '')
-        items_by_prompt = defaultdict(list)
+        items_by_group = defaultdict(list)
         with open(path) as f:
             for line in f:
                 line = line.strip()
                 if not line:
                     continue
                 item = json.loads(line)
-                items_by_prompt[item.get("setup_id", "default")].append(item)
-        all_datasets[dataset_name] = dict(items_by_prompt)
+                key = (item.get("setup_id", "default"), item.get("model", "unknown"))
+                items_by_group[key].append(item)
+        all_datasets[dataset_name] = dict(items_by_group)
     return all_datasets
 
 

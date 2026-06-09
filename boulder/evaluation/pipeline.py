@@ -94,7 +94,7 @@ class EvaluationPipeline:
         for dataset_name, data in self.datasets.items():
             logger.info("Processing dataset: %s", dataset_name)
 
-            for setup_id, items in data.items():
+            for (setup_id, model_name), items in data.items():
                 if self.setup_id:
                     setup_id_base = re.sub(r'-\d+$', '', setup_id)
                     if setup_id_base not in self.setup_id:
@@ -105,7 +105,6 @@ class EvaluationPipeline:
 
                 first = items[0]
                 task_name = first["task_name"]
-                model_name = first["model"]
                 answer_type = first["answer_type"]
                 if answer_type not in TASK_EVALUATORS:
                     logger.warning("Unknown answer_type '%s' in %s/%s", answer_type, dataset_name, setup_id)
