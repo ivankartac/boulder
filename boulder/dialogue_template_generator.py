@@ -12,9 +12,9 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from pydantic import BaseModel, RootModel
 
+TEMPLATE_DIR = Path(__file__).resolve().parent / "prompt_templates"
 ENV = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
 PARAPHRASE_PROMPT_TEMPLATE = ENV.get_template("paraphrase_messages.jinja")
-TEMPLATE_DIR = Path(__file__).resolve().parent / "prompt_templates"
 
 
 class Message(BaseModel):
